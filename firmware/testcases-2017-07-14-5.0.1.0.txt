@@ -1,0 +1,517 @@
+testMuteUnmute (__main__.MuteModeTestCase) ... Running Soundwall test script version  1.0.0
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 1 test in 11.037s
+
+OK
+testVersionInfo (__main__.GetInfoTestCase) ... ready
+
+Test mute mode
+Muting...5s
+
+Test unmute mode
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 1 test in 6.056s
+
+OK
+testSetTone (__main__.SetToneTestCase) ... ready
+
+System info for node 0:
+
+module {
+  name: "TypeNo"
+  version: "6307"
+}
+module {
+  name: "ItemNo"
+  version: "1630726"
+}
+module {
+  name: "SerialNo"
+  version: "28002871"
+}
+module {
+  name: "BTL-VER"
+  version: "2.0.2"
+}
+module {
+  name: "APP-VER"
+  version: "5.0.1.0"
+}
+module {
+  name: "DSP-VER"
+  version: "2.2.1"
+}
+module {
+  name: "H/W-VER"
+  version: "DVT1"
+}
+
+
+System info for node 1:
+
+module {
+  name: "TypeNo"
+  version: "0"
+}
+module {
+  name: "ItemNo"
+  version: "0"
+}
+module {
+  name: "SerialNo"
+  version: "0"
+}
+module {
+  name: "BTL-VER"
+  version: "2.0.2"
+}
+module {
+  name: "APP-VER"
+  version: "5.0.1.0"
+}
+module {
+  name: "DSP-VER"
+  version: "2.2.1"
+}
+module {
+  name: "H/W-VER"
+  version: "EVT1"
+}
+
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 1 test in 54.175s
+
+OK
+testPowerLink (__main__.AudioInputTestCase) ... ready
+
+System info for node 0:
+
+This is tile 1, please input speaker!
+This is tile 2, please input speaker!
+This is tile 3, please input speaker!
+This is tile 4, please input speaker!
+
+System info for node 1:
+
+This is tile 1, please input speaker!
+This is tile 2, please input speaker!
+This is tile 3, please input speaker!
+This is tile 4, please input speaker!
+
+Waiting for device...ok
+testTosLink (__main__.AudioInputTestCase) ... ready
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 12.060s
+
+OK
+testFactoryResetMaster (__main__.FactoryResetTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...ready
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 1 test in 28.129s
+
+OK
+testModeTransistion (__main__.A2BModeTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...ready
+
+Waiting for device...ok
+testSetMaster (__main__.A2BModeTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...ok
+testSetSlave (__main__.A2BModeTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...ok
+testSetStandalone (__main__.A2BModeTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 79.299s
+
+OK
+runTest (__main__.GetTotalNodesTestCase) ... ready
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 1 test in 6.020s
+
+OK
+testModeTransition (__main__.PowerModeTestCase) ... ready
+
+Waiting for device...ok
+testSetStandby (__main__.PowerModeTestCase) ... ready
+
+Waiting for device...ok
+testSetTwice (__main__.PowerModeTestCase) ... ready
+
+Waiting for device...ok
+testSetWorking (__main__.PowerModeTestCase) ... ready
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 36.296s
+
+OK
+testDFUDowngrade (__main__.UpgradeMasterTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...ready
+
+Waiting for device...SOUNDWALL update: entered dfu
+SOUNDWALL update: upgrade BTL to version=2.0.2
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuERROR, status = 10
+dfuERROR, clearing status
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08000000, size = 14336
+Download	[                         ]   0%            0 bytesDownload	[===                      ]  14%         2048 bytesDownload	[=======                  ]  28%         4096 bytesDownload	[==========               ]  42%         6144 bytesDownload	[==============           ]  57%         8192 bytesDownload	[=================        ]  71%        10240 bytesDownload	[=====================    ]  85%        12288 bytesDownload	[=========================] 100%        14336 bytes
+Download done.
+File downloaded successfully
+SOUNDWALL update: upgrade APP to version=5.0.0.2
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08004000, size = 112640
+Download	[                         ]   0%            0 bytesDownload	[                         ]   3%         4096 bytesDownload	[=                        ]   5%         6144 bytesDownload	[==                       ]   9%        10240 bytesDownload	[===                      ]  12%        14336 bytesDownload	[====                     ]  16%        18432 bytesDownload	[=====                    ]  20%        22528 bytesDownload	[=====                    ]  21%        24576 bytesDownload	[======                   ]  25%        28672 bytesDownload	[======                   ]  27%        30720 bytesDownload	[=======                  ]  29%        32768 bytesDownload	[=======                  ]  30%        34816 bytesDownload	[========                 ]  32%        36864 bytesDownload	[=========                ]  36%        40960 bytesDownload	[==========               ]  40%        45056 bytesDownload	[==========               ]  41%        47104 bytesDownload	[===========              ]  45%        51200 bytesDownload	[============             ]  49%        55296 bytesDownload	[============             ]  50%        57344 bytesDownload	[=============            ]  52%        59392 bytesDownload	[=============            ]  54%        61440 bytesDownload	[==============           ]  56%        63488 bytesDownload	[===============          ]  60%        67584 bytesDownload	[================         ]  65%        73728 bytesDownload	[=================        ]  69%        77824 bytesDownload	[==================       ]  72%        81920 bytesDownload	[==================       ]  74%        83968 bytesDownload	[===================      ]  76%        86016 bytesDownload	[====================     ]  80%        90112 bytesDownload	[====================     ]  83%        94208 bytesDownload	[=====================    ]  85%        96256 bytesDownload	[======================   ]  89%       100352 bytesDownload	[=======================  ]  92%       104448 bytesDownload	[======================== ]  96%       108544 bytesDownload	[======================== ]  98%       110592 bytesDownload	[=========================] 100%       112640 bytes
+Download done.
+File downloaded successfully
+Transitioning to dfuMANIFEST state
+SOUNDWALL update: App running
+SOUNDWALL update: Device ready
+SOUNDWALL update: Update done.
+ready
+
+Waiting for device...ok
+testDFUUpgradeWhenInStandby (__main__.UpgradeMasterTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...ready
+
+Waiting for device...SOUNDWALL update: entered dfu
+SOUNDWALL update: upgrade BTL to version=2.0.2
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuERROR, status = 10
+dfuERROR, clearing status
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08000000, size = 14336
+Download	[                         ]   0%            0 bytesDownload	[===                      ]  14%         2048 bytesDownload	[=======                  ]  28%         4096 bytesDownload	[==========               ]  42%         6144 bytesDownload	[==============           ]  57%         8192 bytesDownload	[=================        ]  71%        10240 bytesDownload	[=====================    ]  85%        12288 bytesDownload	[=========================] 100%        14336 bytes
+Download done.
+File downloaded successfully
+SOUNDWALL update: upgrade APP to version=5.0.1.0
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08004000, size = 112640
+Download	[                         ]   0%            0 bytesDownload	[                         ]   0%            0 bytesDownload	[=                        ]   5%         6144 bytesDownload	[==                       ]   9%        10240 bytesDownload	[===                      ]  12%        14336 bytesDownload	[===                      ]  14%        16384 bytesDownload	[====                     ]  16%        18432 bytesDownload	[=====                    ]  20%        22528 bytesDownload	[=====                    ]  23%        26624 bytesDownload	[======                   ]  25%        28672 bytesDownload	[=======                  ]  29%        32768 bytesDownload	[========                 ]  32%        36864 bytesDownload	[========                 ]  34%        38912 bytesDownload	[=========                ]  36%        40960 bytesDownload	[=========                ]  38%        43008 bytesDownload	[==========               ]  40%        45056 bytesDownload	[==========               ]  43%        49152 bytesDownload	[===========              ]  45%        51200 bytesDownload	[===========              ]  47%        53248 bytesDownload	[============             ]  49%        55296 bytesDownload	[=============            ]  52%        59392 bytesDownload	[==============           ]  56%        63488 bytesDownload	[===============          ]  60%        67584 bytesDownload	[===============          ]  61%        69632 bytesDownload	[================         ]  65%        73728 bytesDownload	[================         ]  67%        75776 bytesDownload	[=================        ]  69%        77824 bytesDownload	[=================        ]  70%        79872 bytesDownload	[==================       ]  72%        81920 bytesDownload	[===================      ]  76%        86016 bytesDownload	[====================     ]  80%        90112 bytesDownload	[=====================    ]  85%        96256 bytesDownload	[======================   ]  89%       100352 bytesDownload	[======================   ]  90%       102400 bytesDownload	[=======================  ]  92%       104448 bytesDownload	[=======================  ]  94%       106496 bytesDownload	[======================== ]  96%       108544 bytesDownload	[=========================] 100%       112640 bytes
+Download done.
+File downloaded successfully
+Transitioning to dfuMANIFEST state
+SOUNDWALL update: App running
+SOUNDWALL update: Device ready
+SOUNDWALL update: Update done.
+ok
+testDFUUpgradeWhenWorking (__main__.UpgradeMasterTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...ready
+
+Waiting for device...SOUNDWALL update: entered dfu
+SOUNDWALL update: upgrade BTL to version=2.0.2
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuERROR, status = 10
+dfuERROR, clearing status
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08000000, size = 14336
+Download	[                         ]   0%            0 bytesDownload	[===                      ]  14%         2048 bytesDownload	[=======                  ]  28%         4096 bytesDownload	[==========               ]  42%         6144 bytesDownload	[==============           ]  57%         8192 bytesDownload	[=================        ]  71%        10240 bytesDownload	[=====================    ]  85%        12288 bytesDownload	[=========================] 100%        14336 bytes
+Download done.
+File downloaded successfully
+SOUNDWALL update: upgrade APP to version=5.0.1.0
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08004000, size = 112640
+Download	[                         ]   0%            0 bytesDownload	[                         ]   1%         2048 bytesDownload	[=                        ]   5%         6144 bytesDownload	[=                        ]   7%         8192 bytesDownload	[==                       ]   9%        10240 bytesDownload	[===                      ]  12%        14336 bytesDownload	[====                     ]  16%        18432 bytesDownload	[=====                    ]  20%        22528 bytesDownload	[=====                    ]  21%        24576 bytesDownload	[======                   ]  25%        28672 bytesDownload	[======                   ]  27%        30720 bytesDownload	[=======                  ]  29%        32768 bytesDownload	[=======                  ]  30%        34816 bytesDownload	[========                 ]  32%        36864 bytesDownload	[=========                ]  36%        40960 bytesDownload	[==========               ]  40%        45056 bytesDownload	[===========              ]  45%        51200 bytesDownload	[============             ]  49%        55296 bytesDownload	[============             ]  50%        57344 bytesDownload	[=============            ]  52%        59392 bytesDownload	[=============            ]  54%        61440 bytesDownload	[==============           ]  56%        63488 bytesDownload	[===============          ]  60%        67584 bytesDownload	[================         ]  65%        73728 bytesDownload	[=================        ]  69%        77824 bytesDownload	[==================       ]  72%        81920 bytesDownload	[==================       ]  74%        83968 bytesDownload	[===================      ]  76%        86016 bytesDownload	[====================     ]  80%        90112 bytesDownload	[====================     ]  83%        94208 bytesDownload	[=====================    ]  85%        96256 bytesDownload	[======================   ]  89%       100352 bytesDownload	[=======================  ]  92%       104448 bytesDownload	[======================== ]  96%       108544 bytesDownload	[======================== ]  98%       110592 bytesDownload	[=========================] 100%       112640 bytes
+Download done.
+File downloaded successfully
+SOUNDWALL update: App running
+SOUNDWALL update: Device ready
+SOUNDWALL update: Update done.
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 196.253s
+
+OK
+testSlaveUpgrade (__main__.UpgradeSlavesTestCase) ... ready
+
+Waiting for device...ready
+
+Waiting for device...SOUNDWALL update: entered dfu
+SOUNDWALL update: upgrade BTL to version=2.0.2
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuERROR, status = 10
+dfuERROR, clearing status
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08000000, size = 14336
+Download	[                         ]   0%            0 bytesDownload	[===                      ]  14%         2048 bytesDownload	[=======                  ]  28%         4096 bytesDownload	[==========               ]  42%         6144 bytesDownload	[==============           ]  57%         8192 bytesDownload	[=================        ]  71%        10240 bytesDownload	[=====================    ]  85%        12288 bytesDownload	[=========================] 100%        14336 bytes
+Download done.
+File downloaded successfully
+SOUNDWALL update: upgrade APP to version=5.0.0.2
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08004000, size = 112640
+Download	[                         ]   0%            0 bytesDownload	[                         ]   0%            0 bytesDownload	[=                        ]   5%         6144 bytesDownload	[==                       ]   9%        10240 bytesDownload	[==                       ]  10%        12288 bytesDownload	[===                      ]  12%        14336 bytesDownload	[===                      ]  14%        16384 bytesDownload	[====                     ]  16%        18432 bytesDownload	[=====                    ]  20%        22528 bytesDownload	[======                   ]  25%        28672 bytesDownload	[=======                  ]  29%        32768 bytesDownload	[========                 ]  32%        36864 bytesDownload	[========                 ]  34%        38912 bytesDownload	[=========                ]  36%        40960 bytesDownload	[==========               ]  40%        45056 bytesDownload	[==========               ]  43%        49152 bytesDownload	[===========              ]  45%        51200 bytesDownload	[============             ]  49%        55296 bytesDownload	[=============            ]  52%        59392 bytesDownload	[==============           ]  56%        63488 bytesDownload	[==============           ]  58%        65536 bytesDownload	[===============          ]  60%        67584 bytesDownload	[===============          ]  63%        71680 bytesDownload	[================         ]  65%        73728 bytesDownload	[================         ]  67%        75776 bytesDownload	[=================        ]  69%        77824 bytesDownload	[=================        ]  70%        79872 bytesDownload	[==================       ]  72%        81920 bytesDownload	[===================      ]  76%        86016 bytesDownload	[====================     ]  80%        90112 bytesDownload	[=====================    ]  85%        96256 bytesDownload	[======================   ]  89%       100352 bytesDownload	[=======================  ]  92%       104448 bytesDownload	[=======================  ]  94%       106496 bytesDownload	[======================== ]  96%       108544 bytesDownload	[=========================] 100%       112640 bytes
+Download done.
+File downloaded successfully
+Transitioning to dfuMANIFEST state
+SOUNDWALL update: App running
+SOUNDWALL update: Device ready
+SOUNDWALL update: Update done.
+ready
+Downgrading to  5.0.0.2
+
+Waiting for device...ok
+testUpgradeAllSlaves (__main__.UpgradeSlavesTestCase) ... ready
+Upgrading slave node  1
+fepAseEvent {
+  type: SOUNDWALL_DIAGNOSTIC
+  diagnostic {
+    nodeIndex: 1
+    eventId: 2
+    eventParameter: 1
+  }
+}
+
+
+Waiting for device...ready
+
+Waiting for device...SOUNDWALL update: entered dfu
+SOUNDWALL update: upgrade BTL to version=2.0.2
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuERROR, status = 10
+dfuERROR, clearing status
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08000000, size = 14336
+Download	[                         ]   0%            0 bytesDownload	[===                      ]  14%         2048 bytesDownload	[=======                  ]  28%         4096 bytesDownload	[==========               ]  42%         6144 bytesDownload	[==============           ]  57%         8192 bytesDownload	[=================        ]  71%        10240 bytesDownload	[=====================    ]  85%        12288 bytesDownload	[=========================] 100%        14336 bytes
+Download done.
+File downloaded successfully
+SOUNDWALL update: upgrade APP to version=5.0.1.0
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+Downloading to address = 0x08004000, size = 112640
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%         6144 bytesDownload	[==                       ]   9%        10240 bytesDownload	[===                      ]  12%        14336 bytesDownload	[===                      ]  14%        16384 bytesDownload	[====                     ]  16%        18432 bytesDownload	[=====                    ]  20%        22528 bytesDownload	[=====                    ]  23%        26624 bytesDownload	[======                   ]  25%        28672 bytesDownload	[=======                  ]  29%        32768 bytesDownload	[========                 ]  32%        36864 bytesDownload	[=========                ]  36%        40960 bytesDownload	[==========               ]  40%        45056 bytesDownload	[==========               ]  41%        47104 bytesDownload	[===========              ]  45%        51200 bytesDownload	[===========              ]  47%        53248 bytesDownload	[============             ]  49%        55296 bytesDownload	[============             ]  50%        57344 bytesDownload	[=============            ]  52%        59392 bytesDownload	[==============           ]  56%        63488 bytesDownload	[===============          ]  60%        67584 bytesDownload	[================         ]  65%        73728 bytesDownload	[=================        ]  69%        77824 bytesDownload	[=================        ]  70%        79872 bytesDownload	[==================       ]  72%        81920 bytesDownload	[==================       ]  74%        83968 bytesDownload	[===================      ]  76%        86016 bytesDownload	[====================     ]  80%        90112 bytesDownload	[====================     ]  83%        94208 bytesDownload	[=====================    ]  85%        96256 bytesDownload	[======================   ]  89%       100352 bytesDownload	[=======================  ]  92%       104448 bytesDownload	[=======================  ]  94%       106496 bytesDownload	[======================== ]  96%       108544 bytesDownload	[======================== ]  98%       110592 bytesDownload	[=========================] 100%       112640 bytes
+Download done.
+File downloaded successfully
+Transitioning to dfuMANIFEST state
+SOUNDWALL update: App running
+SOUNDWALL update: Device ready
+SOUNDWALL update: Update done.
+ready
+Upgrading to  5.0.1.0
+
+Waiting for device...ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 208.351s
+
+OK
+ready
+Waiting for slave node  1
+fepAseEvent {
+  type: SOUNDWALL_DIAGNOSTIC
+  diagnostic {
+    nodeIndex: 1
+    eventId: 2
+    eventParameter: 1
+  }
+}
+
+Successful upgrade of slave node  1
